@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>تقييم الخدمة</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+      direction: rtl;
+      text-align: right;
+    }
+    h2 {
+      color: #444;
+      margin-top: 30px;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ddd;
+      max-width: 500px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #222;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    input[type="submit"] {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    input[type="submit"]:hover {
+      background-color: #218838;
+    }
+     body {
+      font-family: 'Arial', sans-serif;
+      direction: rtl;
+      background: #f6f8fa;
+      padding: 30px;
+    }
+    .container {
+      max-width: 400px;
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    select, input, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    .wallet-number {
+      background: #f0f0f0;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h2>تقييم الخدمة</h2>
+<form action="https://getform.io/f/ajjomzga" method="POST" enctype="multipart/form-data">
+    <label>قيم الخدمة:</label>
+    <select name="rating" required>
+      <option value="">اختر...</option>
+      <option value="⭐">⭐</option>
+      <option value="⭐⭐">⭐⭐</option>
+      <option value="⭐⭐⭐">⭐⭐⭐</option>
+      <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+      <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+    </select>
+
+    <label>رأيك في الخدمة:</label>
+    <textarea name="comment" rows="4" placeholder="اكتب رأيك هنا..." required></textarea>
+
+    <input type="submit" value="إرسال التقييم">
+  </form>
+  <script>
+    function showNumber() {
+      var wallet = document.getElementById('wallet').value;
+      var display = document.getElementById('walletNumber');
+      var number = "";
+
+      if (wallet === "Vodafone") number = "01274445091";
+      else if (wallet === "Orange") number = "01274445091";
+      else if (wallet === "Etisalat") number = "01274445091";
+      else number = "";
+
+      if (number) {
+        display.style.display = 'block';
+        display.innerText = "رقم التحويل: " + number;
+      } else {
+        display.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>
